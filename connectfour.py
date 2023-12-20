@@ -63,7 +63,7 @@ def coordinateParser(inputString):
     coordinate[1] = 0
   elif(inputString[0] == "B"):
     coordinate[1] = 1    
-  elif(inputString[0] == "c"):
+  elif(inputString[0] == "C"):
     coordinate[1] = 2  
   elif(inputString[0] == "D"):
     coordinate[1] = 3 
