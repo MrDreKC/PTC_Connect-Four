@@ -118,7 +118,7 @@ while True:
       cpuChoice = [random.choice(possibleLetters), random.randint(0, 5)]
       cpuCoordinate = coordinateParser(cpuChoice)
       if(isSpaceAvailable(cpuCoordinate) and gravityChecker(cpuCoordinate)):
-        modifyArray(coordinate, "🔵")
+        modifyArray(cpuCoordinate, "🔵")
         break
     turnCounter += 1
     winner = checkForWinner("🔵")
