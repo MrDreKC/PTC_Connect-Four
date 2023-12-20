@@ -28,8 +28,8 @@ def modifyArray(spacePicked, turn):
 
 # Check Horizontal Spaces
 def checkForWinner(chip):
-  for y in range(rows):
-    for x in range(cols - 3):
+  for y in range(rows - 3):
+    for x in range(cols):
       if gameBoard[x][y] == chip and gameBoard[x+1][y] == chip and gameBoard[x+2][y] == chip and gameBoard[x+3][y] == chip:
         print("\nGame Over!", chip, " Wins! Thank you for playing")
         return True
