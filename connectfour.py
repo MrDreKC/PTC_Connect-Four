@@ -30,28 +30,28 @@ def modifyArray(spacePicked, turn):
 def checkForWinner(chip):
   for y in range(rows):
     for x in range(cols - 3):
-      if(gameBoard[x][y] == chip and gameBoard[x+1][y] == chip and gameBoard[x+2][y] == chip and gameBoard[x+3][y] == chip):
+      if gameBoard[x][y] == chip and gameBoard[x+1][y] == chip and gameBoard[x+2][y] == chip and gameBoard[x+3][y] == chip:
         print("\nGame Over!", chip, " Wins! Thank you for playing")
         return True
 
 # Check Vertical Spaces      
   for y in range(rows):
     for x in range(cols - 3):
-      if(gameBoard[x][y] == chip and gameBoard[x][y+1] == chip and gameBoard[x][y+2] == chip and gameBoard[x][y+3] == chip):
+      if gameBoard[x][y] == chip and gameBoard[x][y+1] == chip and gameBoard[x][y+2] == chip and gameBoard[x][y+3] == chip:
         print("\nGame Over!", chip, " Wins! Thank you for playing")
         return True
 
 # Check Diagonal (Top Right to Bottom Left) Spaces      
   for y in range(rows - 3):
     for x in range(3, cols):
-      if(gameBoard[x][y] == chip and gameBoard[x+1][y-1] == chip and gameBoard[x+2][y-2] == chip and gameBoard[x+3][y-3] == chip):
+      if gameBoard[x][y] == chip and gameBoard[x+1][y-1] == chip and gameBoard[x+2][y-2] == chip and gameBoard[x+3][y-3] == chip:
         print("\nGame Over!", chip, " Wins! Thank you for playing")
         return True
 
 # Check Diagonal (Top Left to Bottom Right) Spaces      
   for y in range(rows - 3):
     for x in range(cols - 3):
-      if(gameBoard[x][y] == chip and gameBoard[x+1][y+1] == chip and gameBoard[x+2][y+2] == chip and gameBoard[x+3][y+3] == chip):
+      if gameBoard[x][y] == chip and gameBoard[x+1][y+1] == chip and gameBoard[x+2][y+2] == chip and gameBoard[x+3][y+3] == chip:
         print("\nGame Over!", chip, " Wins! Thank you for playing")
         return True
 
