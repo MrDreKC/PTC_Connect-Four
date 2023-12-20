@@ -60,19 +60,19 @@ def checkForWinner(chip):
 def coordinateParser(inputString):
   coordinate = [None] * 2
   if(inputString[0] == "A"):
-    coordinate[1] == 0
+    coordinate[1] = 0
   elif(inputString[0] == "B"):
-    coordinate[1] == 1    
+    coordinate[1] = 1    
   elif(inputString[0] == "c"):
-    coordinate[1] == 2  
+    coordinate[1] = 2  
   elif(inputString[0] == "D"):
-    coordinate[1] == 3 
+    coordinate[1] = 3 
   elif(inputString[0] == "E"):
-    coordinate[1] == 4  
+    coordinate[1] = 4  
   elif(inputString[0] == "F"):
-    coordinate[1] == 5  
+    coordinate[1] = 5  
   elif(inputString[0] == "G"):
-    coordinate[1] == 6
+    coordinate[1] = 6
   else:
     print("Invalid") 
   coordinate[0] = int(inputString[1])
